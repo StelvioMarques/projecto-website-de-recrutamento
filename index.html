@@ -21,39 +21,60 @@
 
         <div class=" relative z-10 h-full w-full flex flex-col justify-between">
 
+            <!-- START Menu -->
             <ul class="fixed top-0 right-[-250px] w-[250px] h-[100%] bg-white flex flex-col gap-[40px] pt-[40px] px-[30px]"
                 id="menu" style="transition: right 1s;">
-
+                
+                <!-- START container icone-menu -->
                 <div class=" flex justify-between items-center">
 
                     <span class="cursor-pointer" onclick="abrir_fechar_menu()">Navegação</span>
 
                     <i class="fa-solid fa-close fa-xl cursor-pointer" onclick="abrir_fechar_menu()"></i>
                 </div>
+                <!-- START container icone-menu END -->
 
+                <!-- items menu -->
                 <div class="flex flex-col gap-[20px]">
                     <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Home</a></li>
                     <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Sobre</a></li>
                     <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Suporte</a></li>
                     <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Contacto</a></li>
                 </div>
+                <!-- items menu END -->
             </ul>
+            <!-- Menu END -->
 
+            <!-- START container navbar -->
             <div class=" flex justify-between items-center py-[10px] px-[20px] text-white">
 
-                <h1 class="text-[24px] font-semibold">Logo</h1>
+                <!-- START container logo -->
+                <div>
+                    <a href="#">
+                        <h1 class="text-[20px] font-semibold">IMCL<h1>
+                        <span>Instituto Médio Comercial de Luanda<span>
+                    </a>
+                </div>
+                <!-- container logo END-->
 
+                <!--START container icone-menu -->
                 <div class="flex items-center justify-center gap-[7px]">
                     <span class="cursor-pointer text-green-500 hover:text-white active:text-green-700"
                         onclick="abrir_fechar_menu()">Menu</span>
                     <i class="fa-solid fa-bars fa-2xl cursor-pointer" onclick="abrir_fechar_menu()"></i>
                 </div>
+                <!-- container icone-menu END-->
+                 
             </div>
+            <!-- container navbar END -->
 
+            <!-- START main content header -->
             <div class=" h-[80%] p-[10px] pt-[40px]">
 
+                <!-- START container conteudo intro + icone redes sociais -->
                 <div class=" h-[70%] p-[5px] flex">
 
+                    <!-- START container texto intro -->
                     <div class=" w-[90%] text-white
                      text-6xl px-[100px] flex justify-center items-center">
 
@@ -62,33 +83,34 @@
                             com o futuro
                         </h1>
                     </div>
+                    <!-- container texto intro END -->
 
+                    <!-- START container icones redes sociais -->
                     <div class=" w-[10%] flex flex-col justify-center items-center gap-[10px] text-white">
 
                         <div class="flex justify-center items-center gap-[10px]">
 
-                            <!-- <span>Facebook</span> -->
                             <i class="fa-brands fa-facebook-f fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
                         </div>
 
                         <div class="flex justify-center items-center gap-[10px]">
 
-                            <!-- <span>WhatsApp</span> -->
                             <i class="fa-brands fa-whatsapp fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
                         </div>
 
                         <div class="flex justify-center items-center gap-[10px]">
 
-                            <!--  <span>Instagram</span>-->
                             <i class="fa-brands fa-instagram fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
                         </div>
                     </div>
+                    <!-- container icones redes sociais END -->
                 </div>
+                <!-- container conteudo intro + icone redes sociais END-->
 
+                <!--START container botoes CTA -->
                 <div class=" h-[10%] px-[100px]">
 
                     <div class=" p-[5px] flex gap-[20px] ">
-
                         <button
                             class="w-[200px] h-[50px] text-white border-[2px] border-white font-semibold hover:text-black hover:bg-white"
                             style="transition: 1s;">Começar</button>
@@ -98,8 +120,11 @@
                             style="transition: 1s;">Saber Mais</button>
                     </div>
                 </div>
+                <!-- container botoes CTA END -->
 
             </div>
+            <!-- START main content header -->
+
         </div>
     </header>
 
