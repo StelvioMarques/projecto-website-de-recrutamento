@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body>
+    <header class=" h-[680px] w-[100%] relative bg-cover bg-center bg-opacity-10"
+        style="background-image: url('images/mustang.jpg');">
+
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+        <div class=" relative z-10 h-full w-full flex flex-col justify-between">
+
+            <ul class="fixed top-0 right-[-250px] w-[250px] h-[100%] bg-white flex flex-col gap-[40px] pt-[40px] px-[30px]"
+                id="menu" style="transition: right 1s;">
+
+                <div class=" flex justify-between items-center">
+
+                    <span class="cursor-pointer" onclick="abrir_fechar_menu()">Navegação</span>
+
+                    <i class="fa-solid fa-close fa-xl cursor-pointer" onclick="abrir_fechar_menu()"></i>
+                </div>
+
+                <div class="flex flex-col gap-[20px]">
+                    <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Home</a></li>
+                    <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Sobre</a></li>
+                    <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Suporte</a></li>
+                    <li><a href="#" class="hover:opacity-[0.6] hover:text-green-700">Contacto</a></li>
+                </div>
+            </ul>
+
+            <div class=" flex justify-between items-center py-[10px] px-[20px] text-white">
+
+                <h1 class="text-[24px] font-semibold">Logo</h1>
+
+                <div class="flex items-center justify-center gap-[7px]">
+                    <span class="cursor-pointer text-green-500 hover:text-white active:text-green-700"
+                        onclick="abrir_fechar_menu()">Menu</span>
+                    <i class="fa-solid fa-bars fa-2xl cursor-pointer" onclick="abrir_fechar_menu()"></i>
+                </div>
+            </div>
+
+            <div class=" h-[80%] p-[10px] pt-[40px]">
+
+                <div class=" h-[70%] p-[5px] flex">
+
+                    <div class=" w-[90%] text-white
+                     text-6xl px-[100px] flex justify-center items-center">
+
+                        <h1 class=" poppins-thin " style="font-weight: 200;">
+                            Fortalecendo nossa equipe com profissionais que compartilham nossos valores e compromisso
+                            com o futuro
+                        </h1>
+                    </div>
+
+                    <div class=" w-[10%] flex flex-col justify-center items-center gap-[10px] text-white">
+
+                        <div class="flex justify-center items-center gap-[10px]">
+
+                            <!-- <span>Facebook</span> -->
+                            <i class="fa-brands fa-facebook-f fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-[10px]">
+
+                            <!-- <span>WhatsApp</span> -->
+                            <i class="fa-brands fa-whatsapp fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-[10px]">
+
+                            <!--  <span>Instagram</span>-->
+                            <i class="fa-brands fa-instagram fa-lg border border-2 border-white w-[35px] h-[35px] rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" h-[10%] px-[100px]">
+
+                    <div class=" p-[5px]">
+
+                        <button
+                            class="w-[200px] h-[50px] text-white border-[2px] border-white font-semibold hover:text-black hover:bg-white"
+                            style="transition: 1s;">Começar</button>
+
+                        <button
+                            class="w-[200px] h-[50px] text-white border-[2px] border-white font-semibold hover:text-black hover:bg-white"
+                            style="transition: 1s;">Saber Mais</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function abrir_fechar_menu() {
+
+            if (menu.style.right == '0px') {
+                menu.style.right = '-250px'
+            } else {
+                menu.style.right = '0px'
+            }
+        }
+        document.getElementById('facebook').style.display = 'none'
+        document.getElementById('whatsapp').style.display = 'none'
+        document.getElementById('instagram').style.display = 'none'
+        function Mostrar_nome() {
+            document.getElementById('instagram').style.display = 'block'
+        }
+    </script>
+
+</body>
+
+</html>
